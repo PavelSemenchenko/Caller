@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A860BD22D58DC3A00AC8A4A /* CallDirectoryHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2A860BCB2D58DC3A00AC8A4A /* CallDirectoryHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A860BD02D58DC3A00AC8A4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A860BA52D58D75B00AC8A4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A860BCA2D58DC3A00AC8A4A;
+			remoteInfo = CallDirectoryHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A860BD72D58DC3A00AC8A4A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2A860BD22D58DC3A00AC8A4A /* CallDirectoryHandler.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2A860BAD2D58D75B00AC8A4A /* Caller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A860BCB2D58DC3A00AC8A4A /* CallDirectoryHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2A860BD32D58DC3A00AC8A4A /* Exceptions for "CallDirectoryHandler" folder in "CallDirectoryHandler" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2A860BCA2D58DC3A00AC8A4A /* CallDirectoryHandler */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2A860BAF2D58D75B00AC8A4A /* Caller */ = {
@@ -16,10 +55,25 @@
 			path = Caller;
 			sourceTree = "<group>";
 		};
+		2A860BCC2D58DC3A00AC8A4A /* CallDirectoryHandler */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2A860BD32D58DC3A00AC8A4A /* Exceptions for "CallDirectoryHandler" folder in "CallDirectoryHandler" target */,
+			);
+			path = CallDirectoryHandler;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A860BAA2D58D75B00AC8A4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A860BC82D58DC3A00AC8A4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2A860BAF2D58D75B00AC8A4A /* Caller */,
+				2A860BCC2D58DC3A00AC8A4A /* CallDirectoryHandler */,
 				2A860BAE2D58D75B00AC8A4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2A860BAD2D58D75B00AC8A4A /* Caller.app */,
+				2A860BCB2D58DC3A00AC8A4A /* CallDirectoryHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				2A860BA92D58D75B00AC8A4A /* Sources */,
 				2A860BAA2D58D75B00AC8A4A /* Frameworks */,
 				2A860BAB2D58D75B00AC8A4A /* Resources */,
+				2A860BD72D58DC3A00AC8A4A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A860BD12D58DC3A00AC8A4A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				2A860BAF2D58D75B00AC8A4A /* Caller */,
@@ -69,6 +127,28 @@
 			productName = Caller;
 			productReference = 2A860BAD2D58D75B00AC8A4A /* Caller.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2A860BCA2D58DC3A00AC8A4A /* CallDirectoryHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A860BD42D58DC3A00AC8A4A /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */;
+			buildPhases = (
+				2A860BC72D58DC3A00AC8A4A /* Sources */,
+				2A860BC82D58DC3A00AC8A4A /* Frameworks */,
+				2A860BC92D58DC3A00AC8A4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2A860BCC2D58DC3A00AC8A4A /* CallDirectoryHandler */,
+			);
+			name = CallDirectoryHandler;
+			packageProductDependencies = (
+			);
+			productName = CallDirectoryHandler;
+			productReference = 2A860BCB2D58DC3A00AC8A4A /* CallDirectoryHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					2A860BAC2D58D75B00AC8A4A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2A860BCA2D58DC3A00AC8A4A = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				2A860BAC2D58D75B00AC8A4A /* Caller */,
+				2A860BCA2D58DC3A00AC8A4A /* CallDirectoryHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A860BAB2D58D75B00AC8A4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A860BC92D58DC3A00AC8A4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A860BC72D58DC3A00AC8A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A860BD12D58DC3A00AC8A4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A860BCA2D58DC3A00AC8A4A /* CallDirectoryHandler */;
+			targetProxy = 2A860BD02D58DC3A00AC8A4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2A860BB92D58D75D00AC8A4A /* Debug */ = {
@@ -302,6 +408,58 @@
 			};
 			name = Release;
 		};
+		2A860BD52D58DC3A00AC8A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7328NRHXBW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectoryHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leksovich.Caller.CallDirectoryHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A860BD62D58DC3A00AC8A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7328NRHXBW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallDirectoryHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = leksovich.Caller.CallDirectoryHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +477,15 @@
 			buildConfigurations = (
 				2A860BBC2D58D75D00AC8A4A /* Debug */,
 				2A860BBD2D58D75D00AC8A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A860BD42D58DC3A00AC8A4A /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A860BD52D58DC3A00AC8A4A /* Debug */,
+				2A860BD62D58DC3A00AC8A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
