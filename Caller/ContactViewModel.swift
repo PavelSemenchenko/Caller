@@ -8,22 +8,21 @@
 import SwiftUI
 
 // Модель контакта: хранит идентификатор, имя, номер, URL картинки и дополнительную информацию.
+/*struct Contact: Identifiable, Codable {
+ var id: Int
+ var name: String
+ var phoneNumber: String
+ var imageURL: String?       // URL изображения (если есть)
+ var additionalInfo: String? // Дополнительная информация, например, комментарии
+ }*/
 struct Contact: Identifiable, Codable {
-    var id: Int
-    var name: String
-    var phoneNumber: String
-    var imageURL: String?       // URL изображения (если есть)
-    var additionalInfo: String? // Дополнительная информация, например, комментарии
+    var id = UUID()
+    var phoneNumber: Int64
+    var label: String
 }
-
-// ViewModel для управления списком контактов и поиском.
-class ContactViewModel: ObservableObject {
-    @Published var contacts: [Contact] = []
-    @Published var searchText: String = ""
-    
-    init() {
-        loadContacts()
-    }
+struct ContactsStorage {
+    static let appGroupID = "group.com.yourcompany.yourapp" // Замените на свой App Group ID
+    static let contactsKey = "contacts"
     
     static func loadContacts() -> [Contact] {
         if let data = UserDefaults(suiteName: appGroupID)?.data(forKey: contactsKey),
